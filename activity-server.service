@@ -1,0 +1,10 @@
+[Unit]
+Description=report_ssh_activity
+After=network.target
+[Service]
+User=1001
+Group=1001
+ExecStart=/usr/local/bin/activity-server
+Type=simple
+[Install]
+WantedBy=default.target
